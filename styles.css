@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #161f3b;
+    height: 100vh;
+    overflow: hidden;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* -------------------------------------------- */
+
+.container {
+    height: 80vh;
+    width: 80vw;
+    background: #242e4c;
+    border-radius: 5px;
+    padding: 3rem 7rem;
+    position: relative;
+}
+
+.btn { 
+    display: inline-block;
+    cursor: pointer;
+    padding: 0.5rem;
+    background: #242e4c;
+    border: 2px solid #1D2545;
+    border-radius: 3px;
+    color: #546484;
+}
+
+.btn-light { color: #f2f2f2;}
+.btn-primary { color: #fd6c9d;
+    border: none;}
+
+/* -------------------------------------------- */
+
+/* Search */
+.logo {
+    margin-bottom: 1.5rem;
+}
+
+.search-container {
+    display: inline-block;
+    width: 300px;
+    background: #242e4c;
+    border: 2px solid #1D2545;
+    border-radius: 3px;
+    color: #546484;
+    padding: 0.25rem;
+}
+
+.search-container button,
+.search-container input {
+    background: #242e4c;
+    color: #546484;
+    border: none;
+}
+/* ***************** */
+.search-container input:focus {
+    padding: 0.5rem;
+}
+
+.search-container input::placeholder {
+    color: #546484;
+}
+/* ********************** */
+.search-container + button {
+    display: inline-block;
+    margin-left: 500px;
+}
+
+/* Table */
+table {
+     width: 100%;
+     background: #1b253f;
+     margin: 2rem auto;
+     color: #f2f2f2;
+     border-radius: 5px;
+     border-color: #242e4c;
+     text-align: left;
+}
+
+table tr:hover {
+    background: #151f3a;
+}
+
+th { 
+    font-weight: normal;
+    background: #242e4c;
+    border: none;
+    padding: 0.75rem;
+ 
+}
+
+td:first-child {
+    padding: 0.75rem;
+    border-bottom: 3px solid #242e4c;
+}
+
+
+/* ------------------------------------------- */
+
+.btn-primary {
+    margin-left: 96%;
+}
+
+
+/* -------------------------------------------- */
+
+.salmon-dot {
+    color: salmon;
+
+}
+
+.green-dot {
+    color:#00FA9A;
+
+}
+
+.blue-dot {
+    color:#1E90FF;
+
+}
+
+td i { padding: 5px; font-size: 0.5rem; margin: auto;}
+
+.salmon {
+    border-left: 5px solid salmon;
+
+}
+
+.green {
+    border-left: 5px solid #00FA9A;
+
+}
+
+.blue {
+    border-left: 5px solid 	#1E90FF;
+
+}
+
