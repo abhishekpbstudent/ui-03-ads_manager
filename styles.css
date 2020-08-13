@@ -26,6 +26,9 @@ body {
     border-radius: 5px;
     padding: 3rem 7rem;
     position: relative;
+    box-shadow: 0 5px 10px rgba(12, 16, 31, 0.4);
+    margin: auto;
+    /* width: 1000px; */
 }
 
 .btn { 
@@ -82,70 +85,88 @@ body {
 /* Table */
 table {
      width: 100%;
-     background: #1b253f;
-     margin: 2rem auto;
+     margin: 1.5rem auto;
      color: #f2f2f2;
      border-radius: 5px;
-     border-color: #242e4c;
      text-align: left;
+     padding: 10px;
 }
 
 table tr:hover {
     background: #151f3a;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
 }
 
-th { 
+th,td { 
     font-weight: normal;
-    background: #242e4c;
-    border: none;
     padding: 0.75rem;
- 
 }
 
-td:first-child {
-    padding: 0.75rem;
-    border-bottom: 3px solid #242e4c;
+table tbody tr {
+    background:  #1c223b;
 }
+
+/* Rounding the border radius */
+
+table tbody tr td:first-of-type {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+table tbody tr td:last-of-type {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    text-align: center;
+}
+
 
 
 /* ------------------------------------------- */
+ /* Pink Plus Button */
 
 .btn-primary {
     margin-left: 96%;
 }
 
-
 /* -------------------------------------------- */
 
-.salmon-dot {
-    color: salmon;
-
-}
-
-.green-dot {
-    color:#00FA9A;
-
-}
-
-.blue-dot {
-    color:#1E90FF;
-
-}
+/* coloring */
 
 td i { padding: 5px; font-size: 0.5rem; margin: auto;}
 
-.salmon {
-    border-left: 5px solid salmon;
+table tbody tr.salmon td:first-of-type { border-left: 5px solid salmon; }
 
+table tbody tr.green td:first-of-type { border-left: 5px solid #00FA9A; }
+
+table tbody tr.blue td:first-of-type { border-left: 5px solid 	#1E90FF; }
+
+
+table tbody tr.salmon td:nth-of-type(3) i { color:  salmon; }
+
+table tbody tr.green td:nth-of-type(3) i { color:  #00FA9A; }
+
+table tbody tr.blue td:nth-of-type(3) i { color:  	#1E90FF; }
+
+
+/* ----------------------------------------------------- */
+
+.delete {
+    cursor: pointer;
+    /* background: #242e4c; */
+    border: 0;
+    color: #242e4c;;
+    opacity: 0;
 }
 
-.green {
-    border-left: 5px solid #00FA9A;
+@media(max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
 
+    table th:nth-of-type(3),
+    table td:nth-of-type(3) {
+        display: none;
+    }
 }
 
-.blue {
-    border-left: 5px solid 	#1E90FF;
-
-}
 
